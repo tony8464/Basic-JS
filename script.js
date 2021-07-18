@@ -1,25 +1,17 @@
 const addButton = document.getElementById('plus-one');
 const minusButton = document.getElementById('minus-one');
 
+const counterEl = document.getElementById('counter');
+let counterValue = parseFloat(counterEl.value)
 
 
+//just another way of doing the same thing:
 function plusCounter() {
-    const counterValue = document.getElementById('counter');
-    counterValue1 = parseFloat(counterValue.value)
-    counterValue1 +=1;
-for (let i = counterValue1; i < counterValue1+1; i++){
-    counterValue.value = i
+    counterEl.value = counterValue +=1;
 }
-}
-//just another way of doing the same thing
-
-
 function minusCounter() {
-    const counterValue = document.getElementById('counter');
-    counterValue1 = parseFloat(counterValue.value)
-    counter.value = counterValue1 -=1;
+    counterEl.value = counterValue -=1;
 }
-
 
 
 //event listeners
