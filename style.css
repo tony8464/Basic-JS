@@ -14,13 +14,16 @@ body {
   display: flex;
   flex-direction: row;
 }
+.error {
+  border: 3px solid red;
+}
 .buttons {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
 }
-#counter {
+.counter {
   width: 100%;
   margin: 3px;
   border-radius: 6px;
@@ -28,8 +31,13 @@ body {
 input {
   width: 50%;
 }
-#plus-one,
-#minus-one {
+.plus-one,
+.minus-one {
   height: 100%;
   margin: 3px;
+  border-radius: 6px;
+}
+.NaN-error {
+  visibility: hidden;
+  color: red;
 }

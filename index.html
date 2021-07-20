@@ -9,14 +9,16 @@
 </head>
 <body>
     <h1>Counter</h1>
-    <div class="container">
-        <input type="number" id="counter" value="0">
+    <div class="container" id="container">
+        <input type="number" id="counter" class="counter" value="0">
 
         <div class="buttons">
-        <button id="plus-one">Plus</button>
-        <button id="minus-one">Minus</button>
+        <button id="plus-one" class="plus-one">Plus</button>
+        <button id="minus-one" class="minus-one">Minus</button>
     </div>
+    
     </div>
+    <div id="NaN-error" class="NaN-error">Please enter a valid number</div>
     <script src="script.js"></script>
 </body>
 </html>
