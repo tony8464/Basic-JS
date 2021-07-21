@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  background-color: aquamarine;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  height: 300px;
+  width: 300px;
+}
+
+#f-side,
+#c-side {
+  margin: 30px;
+  pad: 20px;
+}
