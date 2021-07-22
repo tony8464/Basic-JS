@@ -5,17 +5,17 @@ const fInputEl = document.getElementById('f-input');
 
 function updateFinput(){
     let newTemp = parseFloat(cInputEl.value);
-    fInputEl.value = parseFloat(newTemp * 1.8 + 32).toFixed(0);
+    fInputEl.value = parseFloat((newTemp * 1.8) + 32).toFixed(0);
     console.log(fInputEl.value)
 }
 
 function updateCinput(){
     let newTemp = parseFloat(fInputEl.value);
-    cInputEl.value = parseFloat((newTemp - 32) / 1.8 - 32).toFixed(0);
+    cInputEl.value = parseFloat((newTemp - 32) / 1.8).toFixed(0);
     console.log(cInputEl.value)
 }
 
 
-cInputEl.addEventListener('change', updateFinput);
-fInputEl.addEventListener('change', updateCinput);
+cInputEl.addEventListener('keyup', updateFinput);
+fInputEl.addEventListener('keyup', updateCinput);
 

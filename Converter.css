@@ -1,4 +1,5 @@
 body {
+  font-family: sans-serif;
   display: flex;
   background-color: aquamarine;
   flex-direction: column;
@@ -9,6 +10,21 @@ body {
   display: flex;
   height: 300px;
   width: 300px;
+}
+.f-side,
+.c-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  border: none;
+  -moz-appearance: textfield;
+  background: #f2f2f2;
+  border-radius: 10px;
+  padding: 22px;
+  width: 40px;
+  font-size: 20px;
 }
 
 #f-side,
